@@ -1,0 +1,29 @@
+.principal{
+    text-align: center;
+}
+
+.subtitulo{
+    font-size: 24px; text-align: center;
+}
+
+.item01{
+    color:red; font-size: 12px; text-align: center;
+}
+.texto01{
+    color:red;
+}
+
+.item02{
+    font-size: 20px;text-align: center;
+}
+.texto02{
+    color:black;
+}
+
+
+.item03{
+    color:green; font-size: 20px;text-align: center;
+}
+.texto03{
+    color:green;
+}
