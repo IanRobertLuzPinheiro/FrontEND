@@ -4,11 +4,9 @@ import { JsonReaderService } from '../json-reader.service';
 
 @Component({
   selector: 'app-property',
-  templateUrl: './property.component.html',
-  styleUrls: ['./property.component.css']
 })
 export class PropertyComponent implements OnInit {
-  vehicle: string;
+  veiculo: string;
   properties: string[] = [];
 
   constructor(
@@ -17,10 +15,10 @@ export class PropertyComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.vehicle = this.route.snapshot.paramMap.get('vehicle');
+    this.veiculo = this.route.snapshot.paramMap.get('veiculo');
     this.jsonReaderService.getVeiculos().subscribe(veiculos => {
-      const selectedVehicle = veiculos[this.vehicle];
-      this.properties = Object.keys(selectedVehicle);
+      const selectedVeiculo = veiculos[this.veiculo];
+      this.properties = Object.keys(selectedVeiculo);
     });
   }
 }

@@ -5,10 +5,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-category',
-  templateUrl: './category.component.html',
-  styleUrls: ['./category.component.css']
 })
-export class CategoryComponent implements OnInit {
+export class CategoriaComponente implements OnInit {
   categories: string[] = [];
 
   constructor(private jsonReaderService: JsonReaderService, private router: Router) {}
@@ -19,7 +17,7 @@ export class CategoryComponent implements OnInit {
     });
   }
 
-  onSelectCategory(category: string): void {
-    this.router.navigate(['/vehicles', category]);
+  onSelectCategoria(categoria: string): void {
+    this.router.navigate(['/vehicles', categoria]);
   }
 }

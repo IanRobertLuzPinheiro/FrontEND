@@ -4,13 +4,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { JsonReaderService } from '../json-reader.service';
 
 @Component({
-  selector: 'app-vehicle',
-  templateUrl: './vehicle.component.html',
-  styleUrls: ['./vehicle.component.css']
+  selector: 'app-veiculo',
 })
-export class VehicleComponent implements OnInit {
-  category: string;
-  vehicles: string[] = [];
+export class VeiculoComponente implements OnInit {
+  categoria: string;
+  veiculo: string[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -21,11 +19,11 @@ export class VehicleComponent implements OnInit {
   ngOnInit(): void {
     this.category = this.route.snapshot.paramMap.get('category');
     this.jsonReaderService.getVeiculos().subscribe(veiculos => {
-      this.vehicles = veiculos[this.category];
+      this.veiculo = veiculos[this.category];
     });
   }
 
-  onSelectVehicle(vehicle: string): void {
-    this.router.navigate(['/properties', vehicle]);
+  onSelectVeiculo(veiculo: string): void {
+    this.router.navigate(['/properties', veiculo]);
   }
 }
