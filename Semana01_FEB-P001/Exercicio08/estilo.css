@@ -1,0 +1,19 @@
+*{
+    background-color: black;
+}
+/*so funciona para largura ate os 300px*/
+@media (max-width: 772px){
+    *{background-color: blue;}
+   
+}
+
+@media (min-width:773px) and (max-width: 1100px){
+    *{background-color: yellow;}
+   }
+}
+
+@media (min-width: 1100px){
+    
+    *{background-color: red;}
+    
+}
