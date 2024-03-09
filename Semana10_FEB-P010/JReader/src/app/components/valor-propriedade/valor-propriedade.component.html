@@ -1,1 +1,5 @@
-<p>valor-propriedade works!</p>
+<div class="box" *ngIf="name != undefined">
+    <span class="title">{{ name }}</span>
+    <h3>{{ info }}</h3>
+    <button (click)="onClick()">Adicionar</button>
+  </div>
