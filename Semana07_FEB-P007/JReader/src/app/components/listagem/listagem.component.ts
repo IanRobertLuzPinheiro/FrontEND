@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Veiculo } from '../../Veiculo';
 
 @Component({
   selector: 'app-listagem',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './listagem.component.css'
 })
 export class ListagemComponent {
-
+  @Input() listVeiculos: Veiculo[] = [];
 }

@@ -1,1 +1,9 @@
-<p>last-categoria works!</p>
+<div class="last-div" *ngIf="showName != undefined ">
+    <div>
+      <li class="title"> {{ showName }} </li>
+      <li> {{ showInfo }} </li>
+    </div>
+    <div>
+      <button (click)="add()">Adicionar</button>
+    </div>
+  </div>

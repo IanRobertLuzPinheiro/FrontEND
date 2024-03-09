@@ -1,1 +1,6 @@
-<p>second-categoria works!</p>
+<div>
+    <ul *ngIf="selectedType != '' ">
+      <li class="title"> {{ selectedType }}</li>
+      <li (click)="select(selectedNames.indexOf(nome))" *ngFor="let nome of selectedNames"> {{ nome }}</li>
+    </ul>
+  </div>
