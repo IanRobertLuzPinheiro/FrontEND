@@ -8,11 +8,11 @@
       <input type="password" formControlName="senha">
       <span *ngIf="formulario.get('senha')?.invalid && formulario.get('senha')?.touched">Senha Inválida</span>
       <br>
-      <label for="">Email</label>
+      <label for="">E-mail</label>
       <input type="email" formControlName="email">
       <span *ngIf="formulario.get('email')?.invalid && formulario.get('email')?.touched">Email Inválido</span>
       <br>
-      <label for="">Nome Completo</label>
+      <label for="">Nome </label>
       <input type="text" formControlName="nome">
       <span *ngIf="formulario.get('nome')?.invalid && formulario.get('nome')?.touched">Nome Inválido</span>
       <br>
@@ -42,7 +42,7 @@
       <span *ngIf="formulario.get('profissao')?.invalid && formulario.get('profissao')?.touched">Profissão Inválida</span>
       <br>
       <div *ngIf="formulario.invalid && formulario.dirty" class="mensagem-erro">
-        Por favor, preencha o formulário corretamente.
+        Erro! Preencha novamente.
       </div>
       <input type="submit" value="Submit" class="submit">
     </form>
