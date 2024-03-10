@@ -6,7 +6,7 @@
     height: 30px;
     gap: 1px;
     margin: 0;
-    background-color: #ece7e7;
+    background-color: #c8d335;
     border-radius: 5px;
   }
   
@@ -22,5 +22,5 @@
   }
   
   .nav-header a:hover {
-    background-color: #490101;
+    background-color: #0d0766;
   }
